@@ -1,0 +1,20 @@
+{
+    "name": "Sdarot Reloader",
+    "version": "1.0",
+    "description": "Extension to reload Sdarot when fails to play",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://sdarot.work/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {}
+}
